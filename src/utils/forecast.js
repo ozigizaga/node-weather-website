@@ -12,7 +12,7 @@ const forecast = ( lat, long, k) => {
             let low = body.daily.data[0].temperatureMin
             let high = body.daily.data[0].temperatureMax
 
-            k(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress out. There is a ' + body.currently.precipProbability + '% chance of rain.', "Today's high: " + high + ". Today's low: " + low);
+            k(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees out. There is a ' + body.currently.precipProbability + '% chance of rain.', "Today's high: " + high + ". Today's low: " + low);
         }
     })
 }
